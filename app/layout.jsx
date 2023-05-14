@@ -2,15 +2,18 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 import "@styles/global.css";
 
-export const metadeta = {
+export const metadata = {
   title: "Promtopia",
   description: "Discover & Share AI Prompts",
+  icons: {
+    icon: '/assets/images/logo.svg',
+  },
 };
 
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
         <Provider>
           <div className="main">
             <div className="gradient" />
